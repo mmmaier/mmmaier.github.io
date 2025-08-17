@@ -42,6 +42,7 @@ main {
   object-fit: cover;
   border-radius: 50%;
   float: left;
+  margin-right: 2rem;
 }
 
 footer {
