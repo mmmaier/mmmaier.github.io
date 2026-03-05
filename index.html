@@ -4,30 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Melanie Maier</title>
+  <meta name="description" content="Melanie Maier — Mathematics in Data Science (TUM). Research in medical AI, biosignal processing, and computer vision." />
   <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
   <header>
-    <h1>Melanie Maier</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="cv.html">CV</a>
-      <a href="publications.html">Publications</a>
-      <a href="interests.html">Interests</a>
-    </nav>
+    <div class="header-inner">
+      <h1>Melanie Maier</h1>
+      <p class="tagline">Mathematics in Data Science · Medical AI · Computer Vision</p>
+
+      <nav aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="interests.html">Interests</a>
+      </nav>
+    </div>
   </header>
 
   <main class="home">
-    <img src="assets/melanie_photo.jpg" alt="Melanie Maier" class="profile-photo">
-    <section>
-      <p>I am a Master’s graduate in Mathematics in Data Science from the Technical University of Munich, where I specialized in Machine Learning, Deep Learning, Computer Vision, and the Mathematical Foundations of Machine Learning and Statistics. My academic journey has been guided by a strong curiosity for solving real-world problems through data-driven methods.
-         I bring a particular passion for working with medical and physiological data, where I have developed a solid background in signal analysis and statistical modeling. Throughout my research and projects, I have enjoyed tackling complex challenges such as understanding biosignals, advancing motion tracking, and improving data interpretation for practical use cases.</p>
-      <p>Email: <a href="mailto:melanie-maria.maier@t-online.de">melanie-maria.maier@t-online.de</a></p>
+    <section class="intro">
+      <img src="assets/melanie_photo.jpg" alt="Portrait of Melanie Maier" class="profile-photo">
+
+      <div class="intro-text">
+        <p class="hello">Hi, I’m Melanie 👋</p>
+
+        <p>
+          I’m a Master's graduate in <strong>Mathematics in Data Science</strong> at the Technical University of Munich (TUM),
+          with a focus on <strong>machine learning</strong>, <strong>statistics</strong>, and <strong>computer vision</strong>.
+          I enjoy building methods that are both mathematically sound and useful in practice.
+        </p>
+
+        <p>
+          My main research interest is <strong>AI for healthcare</strong> — especially working with
+          <strong>physiological signals</strong> (e.g., ECG) and bridging the gap between prototypes and real-world deployment.
+          I’m also excited about robust evaluation, generalization, and “what breaks when things get messy”.
+        </p>
+
+        <p>
+          Outside of research, I love hands-on projects — for example, I’m building
+          <a href="https://www.posequest.com" target="_blank" rel="noopener noreferrer">PoseQuest</a>,
+          a computer-vision based coaching tool for equestrian sports.
+        </p>
+
+        <div class="cta-row">
+          <a class="button" href="cv.html">View CV</a>
+          <a class="button button-secondary" href="publications.html">Publications</a>
+          <a class="button button-secondary" href="mailto:melanie-maria.maier@t-online.de">Email me</a>
+        </div>
+
+        <ul class="quick-facts" aria-label="Quick facts">
+          <li><strong>Based in:</strong> Munich, Germany</li>
+          <li><strong>Currently:</strong> Research Assistant (ECG / PVC detection) · Incoming PhD (Aug 2026)</li>
+          <li><strong>Interests:</strong> Medical AI, biosignal processing, multimodal models, evaluation</li>
+        </ul>
+
+        <p class="contact">
+          Email: <a href="mailto:melanie-maria.maier@t-online.de">melanie-maria.maier@t-online.de</a>
+          <span class="dot">·</span>
+          <a href="https://www.posequest.com" target="_blank" rel="noopener noreferrer">posequest.com</a>
+        </p>
+
+        <!-- Optional: add these once you have the links
+        <p class="links">
+          <a href="https://github.com/USERNAME" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span class="dot">·</span>
+          <a href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span class="dot">·</span>
+          <a href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        </p>
+        -->
+      </div>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Melanie Maier
+    <span>&copy; <span id="year"></span> Melanie Maier</span>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
