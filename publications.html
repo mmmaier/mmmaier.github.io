@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Publications - Melanie Maier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications - Melanie Maria Maier</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Publications</h1>
+    <h1>Scientific Publications</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="cv.html">CV</a>
@@ -17,19 +18,46 @@
   </header>
 
 <main>
-    <ul>
-      <li>
-        Rückert-Eheberg et al. (2025). Respiratory rate and its associations with disease and lifestyle factors in the general population – results from the KORA-FF4 study. PLoS ONE.<br>
-      </li>
-      <li>
-        Steger et al. (2024). Deceleration capacity derived from a five-minute electrocardiogram predicts mortality in the general population. Scientific Reports.<br>
-    </li>
-      <li>
-        Martens et al. (2024). Smart hospital: achieving interoperability and raw data collection from medical devices in clinical routine. Frontiers in Digital Health.<br>
-      </li>
-    </ul>
+    <section>
+      <h2>Journal Articles</h2>
+      <ul>
+        <li>
+          <strong>I.-M. Rückert-Eheberg</strong>, A. Steger, A. Müller, …, <strong>M. Maier</strong>, et al. (2025). 
+          <em>Respiratory rate and its associations with disease and lifestyle factors in the general population – results from the KORA-FF4 study.</em> 
+          PLOS ONE.
+        </li>
+        <li>
+          <strong>A. Steger</strong>, P. Barthel, A. Müller, …, <strong>M. Maier</strong> et al. (2024). 
+          <em>Deceleration capacity derived from a five-minute electrocardiogram predicts mortality in the general population.</em> 
+          Scientific Reports (Nature Portfolio).
+        </li>
+        <li>
+          <strong>E. Martens</strong>, H.-U. Haase, G. Mastella, …, <strong>M. Maier</strong> et al. (2024). 
+          <em>Smart hospital: achieving interoperability and raw data collection from medical devices in clinical routine.</em> 
+          Frontiers in Digital Health.
+        </li>
+      </ul>
+    </section>
+
+    <section style="margin-top: 2rem;">
+      <h2>Under Review / In Preparation</h2>
+      <ul>
+        <li>
+          <strong>M. Maier</strong> et al. <em>Optimized classical ML and deep learning algorithms for PVC detection in long-term ECG recordings.</em> 
+          (Under review for MICCAI).
+        </li>
+        <li>
+          <strong>M. Maier</strong> et al. <em>VLM assisted reinforcement learning agent in the JAXAtari framework.</em> 
+          (Under review for ICML).
+        </li>
+      </ul>
+    </section>
   </main>
 
-  <footer>&copy; 2025 Melanie Maier</footer>
+  <footer>&copy; <span id="year"></span> Melanie Maria Maier</footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Interests - Melanie Maier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interests - Melanie Maria Maier</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,14 +18,30 @@
   </header>
 
   <main>
-    <ul>
-      <li>Machine learning for biosignal analysis (ECG, respiratory patterns)</li>
-      <li>Computer vision for robotics and scene understanding</li>
-      <li>Posture tracking in equestrian sports using MediaPipe</li>
-      <li>Scientific communication and statistical modeling</li>
-    </ul>
+    <section>
+      <h2>Research Focus</h2>
+      <ul>
+        <li><strong>Medical AI:</strong> 3D reconstruction from ultrasound imaging and AI for healthcare deployment.</li>
+        <li><strong>Biosignal Analysis:</strong> Machine learning for ECG (PVC detection) and respiratory pattern recognition.</li>
+        <li><strong>Generative Models:</strong> Elucidated Diffusion Models (EDM) for environmental image downscaling.</li>
+        <li><strong>Reinforcement Learning:</strong> VLM-assisted RL agents and robust evaluation in novel environments.</li>
+      </ul>
+    </section>
+
+    <section style="margin-top: 2rem;">
+      <h2>Personal Interests</h2>
+      <ul>
+        <li><strong>Computer Vision in Sports:</strong> Real-time posture tracking for equestrian sports (PoseQuest).</li>
+        <li><strong>Equine Care Technology:</strong> Collaboration platforms for veterinary and owner coordination.</li>
+        <li><strong>Entrepreneurship:</strong> Building scalable AI solutions and MVPs in healthcare and sports.</li>
+      </ul>
+    </section>
   </main>
 
-  <footer>&copy; 2025 Melanie Maier</footer>
+  <footer>&copy; <span id="year"></span> Melanie Maria Maier</footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
