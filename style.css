@@ -9,12 +9,26 @@ body {
 header {
   background-color: #232E52;
   color: white;
-  padding: 1rem;
+  padding: 2rem 1rem;
   text-align: center;
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  margin: 0.5rem 0 1.5rem 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 300;
 }
 
 nav {
@@ -34,17 +48,113 @@ nav a.active, nav a:hover {
 
 main {
   padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.home .intro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: 1rem;
 }
 
 .profile-photo {
-  width: 240px;
+  width: 300px;
   height: auto;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  border-radius: 8px;
-  float: left;
-  margin-right: 2.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  flex-shrink: 0;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.hello {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #232E52;
+}
+
+.intro-text p {
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.cta-row {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #232E52;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #314275;
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: #232E52;
+  border: 2px solid #232E52;
+}
+
+.button-secondary:hover {
+  background-color: #eef2ff;
+}
+
+.quick-facts {
+  list-style: none;
+  padding: 1.5rem;
+  background: #fff;
+  border-left: 4px solid #232E52;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin: 2rem 0;
+}
+
+.quick-facts li {
+  margin-bottom: 0.8rem;
+}
+
+.quick-facts li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .home .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 200px;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .cta-row {
+    justify-content: center;
+  }
+  
+  .quick-facts {
+    text-align: left;
+  }
 }
 
 footer {
