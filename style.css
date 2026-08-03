@@ -7,6 +7,7 @@ html {
   --color-indigo: #4C3A8C;
   --color-violet: #6D28D9;
   --color-violet-light: #8B5CF6;
+  --color-gold: #F2B84B;
   --gradient-primary: linear-gradient(135deg, var(--color-navy) 0%, var(--color-indigo) 50%, var(--color-violet) 100%);
 }
 
@@ -46,6 +47,18 @@ header h1 {
   margin: 0;
   font-size: 2.2rem;
   letter-spacing: 0.5px;
+}
+
+header h1.signature {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  color: var(--color-gold);
+  background: linear-gradient(90deg, #ffffff 0%, var(--color-gold) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .tagline {
@@ -100,18 +113,12 @@ main {
   text-align: center;
 }
 
-.landing-prompt {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 2.5rem;
-}
-
 .shape-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 2.5rem 3.5rem;
 }
 
 .shape-link {
@@ -133,16 +140,25 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.4s ease;
 }
 
+.shape-link:nth-child(1) {
+  margin-top: -20px;
+  transform: rotate(-5deg);
+}
+
 .shape-link:nth-child(2) {
+  margin-top: 45px;
   background-image: linear-gradient(225deg, var(--color-navy) 0%, var(--color-indigo) 50%, var(--color-violet) 100%);
+  transform: rotate(4deg);
 }
 
 .shape-link:nth-child(3) {
+  margin-top: -30px;
   background-image: linear-gradient(45deg, var(--color-navy) 0%, var(--color-indigo) 50%, var(--color-violet) 100%);
+  transform: rotate(-3deg);
 }
 
 .shape-link:hover {
-  transform: translateY(-8px) scale(1.05);
+  transform: rotate(0deg) translateY(-8px) scale(1.05);
   box-shadow: 0 14px 34px rgba(109, 40, 217, 0.35);
   background-position: 100% 50%;
   color: white;
@@ -163,6 +179,17 @@ main {
   .shape-link {
     width: 180px;
     height: 180px;
+  }
+
+  .shape-link:nth-child(1),
+  .shape-link:nth-child(2),
+  .shape-link:nth-child(3) {
+    margin-top: 0;
+    transform: rotate(0deg);
+  }
+
+  .shape-link:hover {
+    transform: translateY(-8px) scale(1.05);
   }
 }
 
