@@ -7,7 +7,6 @@ html {
   --color-indigo: #4C3A8C;
   --color-violet: #6D28D9;
   --color-violet-light: #8B5CF6;
-  --color-gold: #F2B84B;
   --gradient-primary: linear-gradient(135deg, var(--color-navy) 0%, var(--color-indigo) 50%, var(--color-violet) 100%);
 }
 
@@ -50,15 +49,12 @@ header h1 {
 }
 
 header h1.signature {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 700;
-  font-size: 4rem;
-  letter-spacing: 1px;
-  color: var(--color-gold);
-  background: linear-gradient(90deg, #ffffff 0%, var(--color-gold) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+  color: #F5F5FA;
 }
 
 .tagline {
