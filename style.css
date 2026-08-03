@@ -3,10 +3,10 @@ html {
 }
 
 :root {
-  --color-navy: #232E52;
-  --color-indigo: #4C3A8C;
-  --color-violet: #6D28D9;
-  --color-violet-light: #8B5CF6;
+  --color-navy: #16213E;
+  --color-indigo: #1F4E8C;
+  --color-violet: #2E6FBE;
+  --color-violet-light: #5B9BD8;
   --gradient-primary: linear-gradient(135deg, var(--color-navy) 0%, var(--color-indigo) 50%, var(--color-violet) 100%);
 }
 
@@ -220,7 +220,7 @@ main {
 .button:hover {
   background-position: 100% 50%;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(109, 40, 217, 0.3);
+  box-shadow: 0 6px 16px rgba(46, 111, 190, 0.3);
 }
 
 .button-secondary {
@@ -320,7 +320,7 @@ a.entry {
 
 .entry:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(76, 58, 140, 0.12);
+  box-shadow: 0 6px 18px rgba(31, 78, 140, 0.12);
 }
 
 .entry-logo {
