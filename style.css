@@ -202,11 +202,11 @@ main {
   animation-delay: -6s;
 }
 
-.motif-eye {
-  top: 42%;
+.motif-rocket {
+  top: 38%;
   right: 4%;
-  width: 90px;
-  height: 54px;
+  width: 56px;
+  height: 94px;
   animation-duration: 7.5s;
   animation-delay: -1.5s;
 }
@@ -261,7 +261,7 @@ main {
 @media (max-width: 768px) {
   .motif-molecule,
   .motif-atom,
-  .motif-eye,
+  .motif-rocket,
   .motif-integral {
     display: none;
   }
