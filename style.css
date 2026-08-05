@@ -63,6 +63,32 @@ header h1.signature {
   font-weight: 300;
 }
 
+.header-profile-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.6rem 0 1rem 0;
+}
+
+.header-profile-links a {
+  display: flex;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.header-profile-links a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.header-profile-links img,
+.header-profile-links svg {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+}
+
 nav {
   margin-top: 0.5rem;
 }
@@ -119,7 +145,7 @@ main {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('assets/image.png') center center / cover no-repeat;
+  background: url('assets/background.png') center center / cover no-repeat;
   opacity: 0.3;
   z-index: 0;
 }
