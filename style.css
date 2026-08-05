@@ -31,6 +31,10 @@ header {
   color: white;
   padding: 2rem 1rem;
   text-align: center;
+  min-height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes gradientShift {
@@ -40,6 +44,7 @@ header {
 }
 
 .header-inner {
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
 }
