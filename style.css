@@ -269,6 +269,51 @@ footer {
   margin-bottom: 1.5rem;
 }
 
+/* Collapsible CV sections */
+.cv-section > summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 2px solid var(--color-violet-light);
+  margin-bottom: 1.5rem;
+}
+
+.cv-section > summary::-webkit-details-marker {
+  display: none;
+}
+
+.cv-section > summary h2 {
+  margin: 0;
+  border-bottom: none;
+  padding-right: 2rem;
+}
+
+.cv-section > summary::after {
+  content: '';
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-right: 2px solid var(--color-violet);
+  border-bottom: 2px solid var(--color-violet);
+  transform: translateY(-75%) rotate(45deg);
+  transition: transform 0.25s ease;
+}
+
+.cv-section[open] > summary::after {
+  transform: translateY(-25%) rotate(-135deg);
+}
+
+.cv-section > summary:hover h2 {
+  color: var(--color-violet);
+}
+
+.cv-section > summary:focus-visible {
+  outline: 2px solid var(--color-violet);
+  outline-offset: 4px;
+}
+
 .entry {
   display: flex;
   gap: 1.5rem;
