@@ -124,6 +124,25 @@ header h1.signature {
   border-radius: 4px;
 }
 
+.header-profile-links .mail-link {
+  position: relative;
+  color: white;
+}
+
+.mail-badge {
+  position: absolute;
+  right: -10px;
+  bottom: -6px;
+  padding: 0 3px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.3px;
+  color: var(--color-navy);
+  background: white;
+  border-radius: 3px;
+}
+
 nav {
   margin-top: 0.5rem;
 }
