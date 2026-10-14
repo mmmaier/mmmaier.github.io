@@ -28,17 +28,18 @@
           <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
         </a>
       </div>
-
-      <nav aria-label="Primary">
-        <a href="index.html" class="active">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="publications.html">Academic Impact</a>
-      </nav>
     </div>
   </header>
 
+  <nav class="site-nav" aria-label="Sections">
+    <a href="#about" class="active">About</a>
+    <a href="#research">Research</a>
+    <a href="#cv">CV</a>
+    <a href="#publications">Academic Impact</a>
+  </nav>
+
   <main class="home">
-    <section class="intro reveal">
+    <section id="about" class="intro reveal">
       <img src="assets/melanie_photo.jpg" alt="Portrait of Melanie Maria Maier" class="profile-photo">
 
       <div class="intro-text">
@@ -57,7 +58,7 @@
         <p>
           Outside of academia, I enjoy building hands-on projects like
           <a href="https://www.meveta.de" target="_blank" rel="noopener noreferrer">Meveta</a>,
-          a documentation platform for mobile veterinarians, or
+          a dictation and documentation software for equine veterinarians, or
           <a href="https://www.posequest.com" target="_blank" rel="noopener noreferrer">posEQuest</a>,
           a computer-vision based coaching tool for equestrian sports.
         </p>
@@ -69,7 +70,7 @@
       </div>
     </section>
 
-    <section class="reveal">
+    <section id="research" class="reveal">
       <h2>Research Interests</h2>
       <ul>
         <li>Geometric and 3D Machine Learning</li>
@@ -90,6 +91,438 @@
         <li><strong>Sports:</strong> Passionate equestrian athlete and trainer</li>
       </ul>
     </section>
+
+    <div id="cv" class="page-group">
+      <h2 class="group-title">Curriculum Vitae</h2>
+
+    <!-- Education -->
+    <details class="cv-section reveal" open>
+      <summary><h2>Education</h2></summary>
+
+      <a class="entry" href="https://www.tum.de/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/tum.png" alt="TUM logo">
+        </div>
+        <div class="entry-content">
+          <h3>Technical University of Munich (TUM)</h3>
+          <p><em>M. Sc. Mathematics in Data Science | Apr 2023 – Oct 2025</em></p>
+          <ul>
+            <li>Final grade: 1.6</li>
+            <li>Focus: Machine Learning and Statistics</li>
+            <li>Thesis: “A Systematic Evaluation of RRI and Morphological Wavelet Features for PVC Detection in ECG Signals Using Machine Learning” (grade 1.3, supervisor: Prof. Daniel Rueckert)</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.unistra.fr/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/universite_de_strasbourg.png" alt="Unistra logo">
+        </div>
+        <div class="entry-content">
+          <h3>Université de Strasbourg (Unistra)</h3>
+          <p><em>Erasmus+ Semester | Aug 2024 – Jan 2025</em></p>
+          <ul>
+            <li>Coursework: Statistical Learning, Advanced Data Analysis, Data Mining, C++.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.tum.de/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/tum.png" alt="TUM logo">
+        </div>
+        <div class="entry-content">
+          <h3>Technical University of Munich (TUM)</h3>
+          <p><em>B. Sc. Mathematics | Oct 2019 – Mar 2023</em></p>
+          <ul>
+            <li>Final grade: 2.3</li>
+            <li>Focus: Analysis, Functional Analysis, Partial Differential Equations</li>
+            <li>Thesis: “The Hille-Yosida Theorem for Semigroups of Linear Operators” (grade 1.0, supervisor: Prof. Daniel Matthes)</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.schyren-gymnasium.de/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/schyren_gymnasium_paf.png" alt="Schyren-Gymnasium Pfaffenhofen logo">
+        </div>
+        <div class="entry-content">
+          <h3>Schyren-Gymnasium Pfaffenhofen</h3>
+          <p><em>Abitur | 2011 – 2019</em></p>
+          <ul>
+            <li>Final grade: 1.0</li>
+          </ul>
+        </div>
+      </a>
+    </details>
+
+    <!-- Research Experience -->
+    <details class="cv-section reveal" open>
+      <summary><h2>Research Experience</h2></summary>
+
+      <a class="entry" href="https://www.tum.de/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/compai.png" alt="TUM Chair of Computational Imaging and AI in Medicine logo">
+        </div>
+        <div class="entry-content">
+          <h3>TUM Chair of Computational Imaging and AI in Medicine</h3>
+          <p><em>PhD Student | Aug 2026 – Aug 2029</em></p>
+          <ul>
+            <li>PhD topic: 3D reconstruction from medical ultrasound imaging data.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.mri.tum.de/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/tum_hospital.png" alt="TUM University Hospital logo">
+        </div>
+        <div class="entry-content">
+          <h3>TUM University Hospital, Munich</h3>
+          <p><em>Research Assistant | Nov 2025 – Jul 2026</em></p>
+          <ul>
+            <li>Optimized classical ML and deep learning algorithms for PVC detection in long-term ECG recordings to support clinical translation of Master’s thesis work (scientific manuscript under review for MICCAI).</li>
+            <li>Explored scalable long-sequence Transformer designs for 24-hour ECG data, addressing context length, memory constraints, and long-range dependency modeling.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.tu-darmstadt.de/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/tu_darmstadt.png" alt="TU Darmstadt logo">
+        </div>
+        <div class="entry-content">
+          <h3>TU Darmstadt</h3>
+          <p><em>Collaborative Research Project | Aug 2025 – Jan 2026</em></p>
+          <ul>
+            <li>Generated counterfactual and unseen test scenarios in the JAXAtari framework to train and evaluate a vision-language model assisted reinforcement learning agent (manuscript under review for ICLR).</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.mdsi.tum.de/di-lab/tum-di-lab/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/TUM_di_lab.png" alt="TUM Data Innovation Lab logo">
+        </div>
+        <div class="entry-content">
+          <h3>TUM Data Innovation Lab, Munich</h3>
+          <p><em>Research Project Data Science in Earth Observation | Oct 2024 – Mar 2025</em></p>
+          <ul>
+            <li>Adapted an Elucidated Diffusion Model (EDM) implementation for sea surface temperature image downscaling using satellite imagery.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.mri.tum.de/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/tum_hospital.png" alt="TUM University Hospital logo">
+        </div>
+        <div class="entry-content">
+          <h3>TUM University Hospital, Munich</h3>
+          <p><em>Student Research Assistant Biosignalanalysis | May 2022 – Jul 2024</em></p>
+          <ul>
+            <li>Supported discovery of novel medical correlations in large-scale studies (KORA, NAKO), e.g., between diabetes and respiratory rate.</li>
+            <li>Presented a novel wavelet-transform based ML-algorithm for PVC detection with >99.2% accuracy on 1M+ heartbeat samples (NAKO).</li>
+          </ul>
+        </div>
+      </a>
+    </details>
+
+    <!-- Industry Experience -->
+    <details class="cv-section reveal" open>
+      <summary><h2>Industry Experience</h2></summary>
+
+      <a class="entry" href="https://www.intrinsic.ai/blog/posts/intrinsic-joins-google-to-accelerate-physical-ai" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/intrinsic.png" alt="Intrinsic logo">
+        </div>
+        <div class="entry-content">
+          <h3>Intrinsic (now Google), Munich</h3>
+          <p><em>Data Science for Robot Operations Intern | Apr 2025 – Sep 2025</em></p>
+          <ul>
+            <li>Improved post-commissioning workflows and accelerated performance monitoring by implementing a scalable metrics service using gRPC for KPI computation.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.check24.de/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/check24.png" alt="CHECK24 logo">
+        </div>
+        <div class="entry-content">
+          <h3>CHECK24 (Kredite24), Munich</h3>
+          <p><em>Data Science Working Student | Oct 2024 – Mar 2025</em></p>
+          <ul>
+            <li>Improved detection metrics by up to 5% F1 score through a line detection algorithm based on bounding box rotation of words.</li>
+            <li>Supported NLP model development (NER with LSTM/xLSTM, TensorFlow) and experimented with efficient LLMs.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.rfa.space/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/rocket_factory.png" alt="Rocket Factory Augsburg logo">
+        </div>
+        <div class="entry-content">
+          <h3>Rocket Factory Augsburg</h3>
+          <p><em>Software Engineering, Mission Analysis Intern | Aug 2024 – Sep 2024</em></p>
+          <ul>
+            <li>Developed Python software to visualize rocket trajectories and ground station visibility.</li>
+            <li>Improved trajectory optimization using a supervised learning initial guess creator.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.ey.com/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/ernst_and_young.png" alt="EY logo">
+        </div>
+        <div class="entry-content">
+          <h3>EY, Munich</h3>
+          <p><em>IT-Consulting Cybersecurity Intern | Aug 2021 – Sep 2021</em></p>
+          <ul>
+            <li>Strengthened client cyber resilience by conducting ITGC testing on backup and recovery processes.</li>
+          </ul>
+        </div>
+      </a>
+    </details>
+
+    <!-- Personal Projects -->
+    <details class="cv-section reveal" open>
+      <summary><h2>Personal Projects</h2></summary>
+
+      <a class="entry" href="https://www.meveta.de" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/meveta.png" alt="Meveta logo">
+        </div>
+        <div class="entry-content">
+          <h3>Meveta – Dictation &amp; Documentation Software for Equine Veterinarians</h3>
+          <p><em>Private Project | Dec 2025 – Present</em></p>
+          <ul>
+            <li>Developing a dictation and documentation software that lets equine veterinarians record findings by voice and turn them into structured treatment documentation.</li>
+            <li>First pilot projects with equine veterinary practices are underway.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://tum-ai.com/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/tum_ai.png" alt="TUM.ai logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>AI-Based Knowledge Management (MVP)</h3>
+          <p><em>TUM.ai E-Lab 4.0 | Oct 2025 – Dec 2025</em></p>
+          <ul>
+            <li>Building an MS Teams bot for auto-creating documentation from meetings using a RAG pipeline.</li>
+            <li>Helped onboard the first pilot customer.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.posequest.com" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/posequest.png" alt="PoseQuest logo">
+        </div>
+        <div class="entry-content">
+          <h3>Computer Vision-Based Sports Coaching Tool</h3>
+          <p><em>PoseQuest | Feb 2025 – Sep 2025</em></p>
+          <ul>
+            <li>Developed a posture analysis tool for equestrian sports based on keypoint detection and personalized language feedback (www.posequest.com).</li>
+          </ul>
+        </div>
+      </a>
+    </details>
+
+    <!-- Awards -->
+    <details class="cv-section reveal" open>
+      <summary><h2>Programs &amp; Awards</h2></summary>
+
+      <a class="entry" href="https://mcml.ai/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/mcml.png" alt="MCML logo">
+        </div>
+        <div class="entry-content">
+          <h3>Munich Center for Machine Learning (MCML) PhD Fellow</h3>
+          <p><em>2026 – 2029</em></p>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.e-fellows.net/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/e_fellows.png" alt="e-fellows.net logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>e-fellows.net Online Scholarship</h3>
+          <p><em>2019 – 2026</em></p>
+        </div>
+      </a>
+
+      <a class="entry" href="https://tum-ai.com/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/tum_ai.png" alt="TUM.ai logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>TUM.ai Entrepreneurship Lab Member</h3>
+          <p><em>2025 – 2026</em></p>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.linde.com/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/linde.png" alt="Linde logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>MDSI/Linde Master Scholarship Recipient</h3>
+          <p><em>2023 – 2024</em></p>
+        </div>
+      </a>
+
+      <a class="entry" href="https://devpost.com/software/conquershot" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/hackatum.png" alt="hackaTUM logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>hackaTUM: 2nd Prize, Huawei Challenge</h3>
+          <p><em>2022</em></p>
+        </div>
+      </a>
+
+      <div class="entry">
+        <div class="entry-logo">
+          <img src="assets/dpg.png" alt="Deutsche Physikalische Gesellschaft logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>Deutsche Physikalische Gesellschaft (DPG) Abitur Graduation Prize</h3>
+          <p><em>2019</em></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-logo">
+          <img src="assets/landeswettbewerb_mathematik.png" alt="Landeswettbewerb Mathematik logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>Landeswettbewerb Mathematik: 2nd Prize</h3>
+          <p><em>2016</em></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-logo">
+          <img src="assets/jugend_forscht.png" alt="Jugend forscht logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>Landeswettbewerb Jugend forscht/Schüler experimentieren: 3rd Prize</h3>
+          <p><em>2014</em></p>
+        </div>
+      </div>
+    </details>
+    </div>
+
+    <div id="publications" class="page-group">
+      <h2 class="group-title">Academic Impact</h2>
+
+    <details class="cv-section reveal" open>
+      <summary><h2>Journal Articles</h2></summary>
+
+      <a class="entry" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0318502" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/plos_one.png" alt="PLOS ONE logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>Respiratory rate and its associations with disease and lifestyle factors in the general population – results from the KORA-FF4 study</h3>
+          <p><em>PLOS ONE | 2025</em></p>
+          <ul>
+            <li>I.-M. Rückert-Eheberg, A. Steger, A. Müller, …, <strong>M. Maier</strong>, et al.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.nature.com/articles/s41598-024-83712-w" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/scientific_reports.png" alt="Scientific Reports (Nature Portfolio) logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>Deceleration capacity derived from a five-minute electrocardiogram predicts mortality in the general population</h3>
+          <p><em>Scientific Reports (Nature Portfolio) | 2024</em></p>
+          <ul>
+            <li>A. Steger, P. Barthel, A. Müller, …, <strong>M. Maier</strong>, et al.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2024.1341475/full" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/frontiers_in_digital_health.png" alt="Frontiers in Digital Health logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>Smart hospital: achieving interoperability and raw data collection from medical devices in clinical routine</h3>
+          <p><em>Frontiers in Digital Health | 2024</em></p>
+          <ul>
+            <li>E. Martens, H.-U. Haase, G. Mastella, …, <strong>M. Maier</strong>, et al.</li>
+          </ul>
+        </div>
+      </a>
+    </details>
+
+    <details class="cv-section reveal" open>
+      <summary><h2>Talks</h2></summary>
+
+      <a class="entry" href="https://www.youtube.com/watch?v=3YvQYvJ4FbI&t=18900s" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/wids_villach.png" alt="Women in Data Science Villach logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>Women in Data Science (WiDS) Conference Villach</h3>
+          <p><em>Invited Talk | Apr 30, 2026</em></p>
+          <ul>
+            <li>▶ Watch the recording (opens at 5:15:00)</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="entry" href="https://www.linde.com/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/linde.png" alt="Linde logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>Linde — Scholarship / Master's Thesis Talk</h3>
+          <p><em>Invited Talk | Nov 5, 2024 | Linde Headquarters, Munich</em></p>
+          <ul>
+            <li>Talk given as part of the MDSI/Linde Master Scholarship program.</li>
+          </ul>
+        </div>
+      </a>
+    </details>
+
+    <details class="cv-section reveal" open>
+      <summary><h2>Posters</h2></summary>
+
+      <a class="entry" href="https://lnkd.in/p/dHbcf8PM" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/nako.png" alt="NAKO logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>1st International NAKO Conference</h3>
+          <p><em>Poster Presentation | Sep 3–4, 2026</em></p>
+        </div>
+      </a>
+    </details>
+
+    <details class="cv-section reveal" open>
+      <summary><h2>Reviewing</h2></summary>
+
+      <a class="entry" href="https://off-grid-workshop.github.io/" target="_blank" rel="noopener noreferrer">
+        <div class="entry-logo">
+          <img src="assets/miccai.png" alt="MICCAI logo" onerror="this.style.display='none'">
+        </div>
+        <div class="entry-content">
+          <h3>MICCAI Off-Grid Workshop</h3>
+          <p><em>Peer Reviewer | 2026</em></p>
+        </div>
+      </a>
+    </details>
+    </div>
   </main>
 
   <footer>
